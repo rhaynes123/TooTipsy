@@ -7,7 +7,7 @@ namespace TooTipsy.Features.Formulas
 {
     public class FormulaFactory: IFormulaFactory
     {
-        private readonly IImmutableDictionary<Formula, IFormula> _formulas;
+        private readonly IImmutableDictionary<FormulaType, IFormula> _formulas;
         public FormulaFactory()
         {
             var formulaTypes = typeof(IFormula).Assembly.ExportedTypes;
@@ -18,7 +18,7 @@ namespace TooTipsy.Features.Formulas
 
         }
 
-        public IFormula GetFormula(Formula formula)
+        public IFormula GetFormula(FormulaType formula)
         {
             return _formulas[formula];
         }

@@ -4,13 +4,13 @@ using TooTipsy.Features.Formulas.Interfaces;
 
 namespace TooTipsy.Features.Formulas.Models
 {
-    public class CalculateTenPercent: IFormula
+    public class CalculateTwentyPercent: IFormula
     {
-        public CalculateTenPercent()
+        public CalculateTwentyPercent()
         {
         }
 
-        public Formula Formula => Formula.TwentyPercentOfBill;
+        public FormulaType Formula => FormulaType.TwentyPercentOfBill;
 
         public decimal CalculateTip(decimal bill, decimal tax)
         {

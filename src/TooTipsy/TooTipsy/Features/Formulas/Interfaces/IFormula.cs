@@ -4,7 +4,7 @@ namespace TooTipsy.Features.Formulas.Interfaces
 {
     public interface IFormula
     {
-        Formula Formula { get; }
+        FormulaType Formula { get; }
         /// <summary>
         /// Calculates a tip based off chosen formula
         /// </summary>

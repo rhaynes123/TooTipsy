@@ -45,16 +45,16 @@ public class IndexModel : PageModel
         return Page();
     }
 
-    public async Task<IActionResult> OnPostAsync(Formula? id)
+    public async Task<IActionResult> OnPostAsync(FormulaType? id)
     {
         try
         {
-            if(!ModelState.IsValid || id is null || id == Formula.None)
+            if(!ModelState.IsValid || id is null || id == FormulaType.None)
             {
                 ModelState.AddModelError(string.Empty, "Model Was Invalid");
                 return Page();
             }
-            var formula = _formulaFactory.GetFormula((Formula)id);
+            var formula = _formulaFactory.GetFormula((FormulaType)id);
             Amount = formula.CalculateTip(bill: calculationRequest.BillAmount, tax: calculationRequest.TaxAmount);
             if (!UserLoggedIn())
             {
@@ -66,7 +66,7 @@ public class IndexModel : PageModel
                 BillAmount = calculationRequest.BillAmount,
                 TaxAmount = calculationRequest.TaxAmount,
                 TipAmount = Amount,
-                FormulaId = (Formula)id,
+                FormulaId = (FormulaType)id,
                 CreatedDate = DateOnly.FromDateTime(calculationRequest.CreatedDate),
                 Username = User.Identity!.Name
             });

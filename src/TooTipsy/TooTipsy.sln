@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1703.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TooTipsy", "TooTipsy\TooTipsy.csproj", "{982E9834-C0F8-4DF6-A7AB-ACFCAEAA28DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TooTipsyTests", "TooTipsyTests\TooTipsyTests.csproj", "{F4F60317-548C-405E-BD5D-E3B18F848D27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{982E9834-C0F8-4DF6-A7AB-ACFCAEAA28DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{982E9834-C0F8-4DF6-A7AB-ACFCAEAA28DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{982E9834-C0F8-4DF6-A7AB-ACFCAEAA28DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4F60317-548C-405E-BD5D-E3B18F848D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F60317-548C-405E-BD5D-E3B18F848D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F60317-548C-405E-BD5D-E3B18F848D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F60317-548C-405E-BD5D-E3B18F848D27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

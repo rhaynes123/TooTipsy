@@ -16,7 +16,7 @@ namespace TooTipsy.Features.Calculations.Models
         [Required]
         public decimal TipAmount { get; set; }
         [Required]
-        public Formula FormulaId { get; set; } = Formula.None;
+        public FormulaType FormulaId { get; set; } = FormulaType.None;
         [Required]
         public DateOnly CreatedDate { get; set; } = DateOnly.FromDateTime(DateTime.Today);
         public string? Username { get; set; }

@@ -5,7 +5,7 @@ namespace TooTipsy.Features.Formulas.Interfaces
 {
     public interface IFormulaFactory
     {
-        IFormula GetFormula(Formula formula);
+        IFormula GetFormula(FormulaType formula);
     }
 }
 

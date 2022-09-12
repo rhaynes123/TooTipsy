@@ -10,7 +10,7 @@ namespace TooTipsy.Features.Formulas.Models
         {
         }
 
-        public Formula Formula => Formula.DoubleTax;
+        public FormulaType Formula => FormulaType.DoubleTax;
 
         public decimal CalculateTip(decimal bill, decimal tax)
         {
